@@ -1,10 +1,9 @@
 require 'date'
 class Item
-  def initialize(genre, author, source, label, date)
+  def initialize(genre, author, label, date)
     @id = Random.rand(1..1000)
     @genre = genre
     @author = author
-    @source = source
     @label = label
     @publish_date = Date.parse(date)
     @archived = false
