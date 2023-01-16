@@ -68,6 +68,4 @@ class App
   def add_game
     p 'add_game'
   end
-
-
 end
