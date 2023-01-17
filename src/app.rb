@@ -1,6 +1,12 @@
 require_relative '../data/read_data'
+require_relative './modules/show_books'
+require_relative './modules/show_labels'
+require_relative './modules/create_book'
 class App
   include ReadData
+  include ListBooks
+  include ListLabels
+  include CreateBook
   def initialize
     @menu_options = {
       '1' => method(:list_all_books),
@@ -14,8 +20,9 @@ class App
       '9' => method(:add_game)
     }
     @books = read_books
+    @labels = read_labels
   end
-
+# Showing the options here
   def run
     @menu_options.each_with_index do |option, index|
       puts "#{index + 1} - #{option[1].name.to_s.split('_').join(' ').capitalize}"
@@ -36,10 +43,6 @@ class App
     end
   end
 
-  def list_all_books
-    p @books
-  end
-
   def list_all_music_albums
     p 'list_all_music_albums'
   end
@@ -52,16 +55,8 @@ class App
     p 'list_all_genres'
   end
 
-  def list_all_labels
-    p 'list_all_labels'
-  end
-
   def list_all_authors
     p 'list_all_authors'
-  end
-
-  def add_book
-    p 'add_book'
   end
 
   def add_music_album
