@@ -2,7 +2,7 @@ require_relative '../src/book'
 describe 'Testing book' do
   context 'Creating a new book' do
     new_book = Book.new('Publisher1', 'Bad', 'Fiction', 'Author', 'Gift', '1990-11-11')
-      
+
     it 'Check if is an instance of Book' do
       expect(new_book).to be_instance_of(Book)
     end
