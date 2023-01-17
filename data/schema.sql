@@ -18,7 +18,7 @@ CREATE TABLE genre (
 
 CREATE TABLE author (
   id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
-  first_name VARCHAR,
+  first_name VARCHAR, 
   last_name VARCHAR,
   items ARRAY(VARCHAR(100)) NOT NULL,
 );
@@ -29,3 +29,9 @@ CREATE TABLE label (
   color VARCHAR NOT NULL,
   items ARRAY(VARCHAR(100)) NOT NULL,
 );
+
+CREATE TABLE music_albums (
+  id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  on_spotify BOOLEAN NOT NULL,
+  FOREIGN KEY (id) REFERENCES items(id)
+)
