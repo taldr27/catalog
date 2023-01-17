@@ -13,5 +13,5 @@ class Book < Item
   end
 end
 
-book1 = Book.new('1', 'bad', '1', '1', '1', '1990-11-11')
-p book1
+# book1 = Book.new('1', 'bad', '1', '1', '1', '1990-11-11')
+# p book1
