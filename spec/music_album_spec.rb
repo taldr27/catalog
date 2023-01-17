@@ -2,7 +2,7 @@ require_relative '../src/music_album'
 
 describe MusicAlbum do
   # use on_spotify, date, genre, author, label
-  music_album = MusicAlbum.new(true, '2020-01-01', 'Horror', 'Stephen King', 'Bad Horror')
+  music_album = MusicAlbum.new(true, '2020-01-01', 'Horror', 'Joy', 'Bad Horror')
 
   it 'takes parameters and returns a MusicAlbum object' do
     expect(music_album).to be_an_instance_of MusicAlbum
@@ -21,7 +21,7 @@ describe MusicAlbum do
   end
 
   it 'returns the author' do
-    expect(music_album.author) == 'Stephen King'
+    expect(music_album.author) == 'Joy'
   end
 
   it 'returns the label' do
