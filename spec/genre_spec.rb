@@ -1,18 +1,14 @@
 require_relative '../src/genre'
-describe 'Testing Genres' do
-  context 'Creating new Genres' do
-    genre = Genres.new('Gift', 'Black')
+describe 'Testing Genre' do
+  context 'Creating new Genre' do
+    new_genre = Genre.new('Gift')
 
-    it 'takes one parameter and returns a Genre object' do
-      expect(genre).to be_an_instance_of Genre
+    it 'Check if is an instance of Genre' do
+      expect(new_genre).to be_instance_of(Genre)
     end
 
-    it 'returns the genre' do
-      expect(genre.genre).to eq 'Horror'
-    end
-
-    it 'returns method to add item' do
-      expect(genre).to respond_to(:add_item)
+    it "Name of the created genre should be 'Gift'" do
+      expect(new_genre.name).to eql 'Gift'
     end
   end
 end
