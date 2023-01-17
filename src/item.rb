@@ -20,5 +20,5 @@ class Item
   end
 end
 
-asd = Item.new('1', '1', '1', '1990-12-11')
-puts asd.publish_date
+# asd = Item.new('1', '1', '1', '1990-12-11')
+# puts asd.publish_date
