@@ -2,6 +2,9 @@ require_relative '../data/read_data'
 require_relative './modules/show_books'
 require_relative './modules/show_labels'
 require_relative './modules/create_book'
+require_relative './modules/show_music_album'
+require_relative './modules/show_genres'
+require_relative './modules/create_music_albums'
 require_relative './write_data'
 class App
   include ReadData
@@ -9,6 +12,9 @@ class App
   include ListLabels
   include CreateBook
   include WriteData
+  include ListMusicAlbum
+  include ListGenre
+  include CreateMusicAlbum
   def initialize
     @menu_options = {
       '1' => method(:list_all_books),
@@ -23,6 +29,8 @@ class App
     }
     @books = read_books
     @labels = read_labels
+    @music_albums = read_music_album
+    @genres = read_genre
   end
 
   # Showing the options here
@@ -46,24 +54,12 @@ class App
     end
   end
 
-  def list_all_music_albums
-    p 'list_all_music_albums'
-  end
-
   def list_all_games
     p 'list_all_games'
   end
 
-  def list_all_genres
-    p 'list_all_genres'
-  end
-
   def list_all_authors
     p 'list_all_authors'
-  end
-
-  def add_music_album
-    p 'add_music_album'
   end
 
   def add_game
