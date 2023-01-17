@@ -14,5 +14,13 @@ describe 'Testing Item' do
     it "Published_date of the created item should be '1990-12-11'" do
       expect(new_item.publish_date).to eql '1990-12-11'
     end
+
+    it "Can be archived method should be true'" do
+      expect(new_item.can_be_archived?).to eql true
+    end
+
+    it "Move to archive method should be true'" do
+      expect(new_item.move_to_archive).to eql true
+    end
   end
 end
