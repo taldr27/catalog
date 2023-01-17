@@ -1,0 +1,20 @@
+[
+  {
+    "publisher": "publisher1",
+    "cover_state": "good",
+    "genre": 741,
+    "author": 494,
+    "label": 730,
+    "publish_date": "2010-01-15",
+    "on_spotify":true
+  },
+  {
+    "publisher": "publisher1",
+    "cover_state": "good",
+    "genre": 741,
+    "author": 494,
+    "label": 730,
+    "publish_date": "2010-01-15",
+    "on_spotify":true
+  }
+]

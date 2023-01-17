@@ -13,4 +13,16 @@ module ReadData
     data_from_file = File.read(json_file)
     JSON.parse(data_from_file)
   end
+
+  def read_music_album
+    json_file = File.open('./data/music_album.json')
+    data_from_file = File.read(json_file)
+    JSON.parse(data_from_file)
+  end
+
+  def read_genre
+    json_file = File.open('./data/genre.json')
+    data_from_file = File.read(json_file)
+    JSON.parse(data_from_file)
+  end
 end
