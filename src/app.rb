@@ -1,4 +1,6 @@
+require_relative '../data/read_data'
 class App
+  include ReadData
   def initialize
     @menu_options = {
       '1' => method(:list_all_books),
@@ -11,6 +13,7 @@ class App
       '8' => method(:add_music_album),
       '9' => method(:add_game)
     }
+    @books = read_books
   end
 
   def run
@@ -34,7 +37,7 @@ class App
   end
 
   def list_all_books
-    p 'list_all_books'
+    p @books
   end
 
   def list_all_music_albums
