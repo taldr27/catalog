@@ -6,7 +6,6 @@ module CreateMusicAlbum
     publisher = gets.chomp
     print 'Cover State (Good OR Bad): '
     cover_state = gets.chomp
-    # Wait for student 2! and show all genres
     print 'Genre: '
     genre = gets.chomp
     print 'Author: '

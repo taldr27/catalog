@@ -31,4 +31,10 @@ module ReadData
     data_from_file = File.read(json_file)
     JSON.parse(data_from_file)
   end
+
+  def read_authors
+    json_file = File.open('./data/authors.json')
+    data_from_file = File.read(json_file)
+    JSON.parse(data_from_file)
+  end
 end
