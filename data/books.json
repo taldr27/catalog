@@ -1,18 +1,1 @@
-[
-  {
-    "publisher": "publisher1",
-    "cover_state": "good",
-    "genre": 741,
-    "author": 494,
-    "label": 730,
-    "publish_date": "2010-01-15"
-  },
-  {
-    "publisher": "publisher2",
-    "cover_state": "bad",
-    "genre": 741,
-    "author": 494,
-    "label": 730,
-    "publish_date": "2020-12-06"
-  }
-]
+[{"publisher":"publisher1","cover_state":"good","genre":741,"author":494,"label":730,"publish_date":"2010-01-15"},{"publisher":"publisher2","cover_state":"bad","genre":741,"author":494,"label":730,"publish_date":"2020-12-06"},{"publisher":"yo","cover_state":"yo","genre":"Joy","author":"yo","selected_label":{"title":"label1","color":"color1"},"publish_date":"1990-11-11"}]

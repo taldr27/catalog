@@ -6,6 +6,9 @@ require_relative './modules/show_music_album'
 require_relative './modules/show_genres'
 require_relative './modules/create_music_albums'
 require_relative './write_data'
+require_relative './modules/show_games'
+require_relative './modules/show_authors'
+require_relative './modules/create_game'
 class App
   include ReadData
   include ListBooks
@@ -15,6 +18,9 @@ class App
   include ListMusicAlbum
   include ListGenre
   include CreateMusicAlbum
+  include ListGames
+  include ListAuthors
+  include CreateGame
   def initialize
     @menu_options = {
       '1' => method(:list_all_books),
@@ -31,6 +37,8 @@ class App
     @labels = read_labels
     @music_albums = read_music_album
     @genres = read_genre
+    @games = read_games
+    @authors = read_authors
   end
 
   # Showing the options here
@@ -52,17 +60,5 @@ class App
       puts "\nThat is not a valid option\n\n"
       run
     end
-  end
-
-  def list_all_games
-    p 'list_all_games'
-  end
-
-  def list_all_authors
-    p 'list_all_authors'
-  end
-
-  def add_game
-    p 'add_game'
   end
 end
