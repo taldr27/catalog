@@ -2,11 +2,13 @@ require_relative '../data/read_data'
 require_relative './modules/show_books'
 require_relative './modules/show_labels'
 require_relative './modules/create_book'
+require_relative './write_data'
 class App
   include ReadData
   include ListBooks
   include ListLabels
   include CreateBook
+  include WriteData
   def initialize
     @menu_options = {
       '1' => method(:list_all_books),

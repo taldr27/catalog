@@ -14,19 +14,20 @@ module CreateBook
     puts 'Choose a label (Number): '
     list_all_labels
     index_label = gets.chomp.to_i
-    selected_label = @labels[index_label]
+    label = @labels[index_label]
     print 'Date (Year/month/day): '
-    date = gets.chomp
-    book = Book.new(publisher, cover_state, genre, author, selected_label, date)
+    publish_date = gets.chomp
+    book = Book.new(publisher, cover_state, genre, author, label, publish_date)
     @books.push({
       'publisher' => book.publisher,
       'cover_state' => book.cover_state,
-      'genre' => book.genre,
+      'genre' => book.genre, # fix
       'author' => book.author,
-      'selected_label' => book.selected_label,
+      'selected_label' => book.label,
       'date' => book.date
       })
-    p @books
+    
+    save_books
     puts 'Book succesfully created!'
   end
 end
