@@ -2,7 +2,7 @@ require_relative '../src/music_album'
 
 describe 'Testing music_album' do
   context 'Creating a new music_album ' do
-    new_music_album = MusicAlbum.new(true, 'Publisher1', 'bad', 'Fiction', 'Author', 'Gift', '1990-11-11')
+    new_music_album = MusicAlbum.new(true, 'Publisher1', 'Fiction', 'Author', 'Gift', '1990-11-11')
 
     it 'Check if is an instance of music_album' do
       expect(new_music_album).to be_instance_of(MusicAlbum)
