@@ -5,7 +5,7 @@
     "genre": 741,
     "author": 494,
     "label": 730,
-    "date": "2010-01-15"
+    "publish_date": "2010-01-15"
   },
   {
     "publisher": "publisher2",
@@ -13,6 +13,6 @@
     "genre": 741,
     "author": 494,
     "label": 730,
-    "date": "2020-12-06"
+    "publish_date": "2020-12-06"
   }
 ]

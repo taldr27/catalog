@@ -24,7 +24,8 @@ class App
     @books = read_books
     @labels = read_labels
   end
-# Showing the options here
+
+  # Showing the options here
   def run
     @menu_options.each_with_index do |option, index|
       puts "#{index + 1} - #{option[1].name.to_s.split('_').join(' ').capitalize}"

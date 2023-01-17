@@ -13,5 +13,4 @@ class Label
     @items.push(item)
     item.label = self
   end
-
 end
