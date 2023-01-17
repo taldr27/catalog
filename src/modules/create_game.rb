@@ -20,15 +20,15 @@ module CreateGame
     last_played_at = gets.chomp
     game = Game.new(multiplayer, last_played_at, genre, author, label, publish_date)
     @games.push({
-      'author' => game.author,
-      'genre' => game.genre['name'],
-      'label' => game.label,
-      'publish_date' => game.publish_date,
-      'multiplayer' => game.multiplayer,
-      'last_played_at' => game.last_played_at,
-      })
-      
-      save_games
+                  'author' => game.author,
+                  'genre' => game.genre['name'],
+                  'label' => game.label,
+                  'publish_date' => game.publish_date,
+                  'multiplayer' => game.multiplayer,
+                  'last_played_at' => game.last_played_at
+                })
+
+    save_games
     puts 'Game succesfully created!'
   end
 end
