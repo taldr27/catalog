@@ -6,9 +6,10 @@ module CreateBook
     publisher = gets.chomp
     print 'Cover State (Good OR Bad): '
     cover_state = gets.chomp
-    # Wait for student 2! and show all genres
-    print 'Genre: '
-    genre = gets.chomp
+    puts 'Choose a genre (Number): '
+    list_all_genres
+    index_genre = gets.chomp.to_i
+    genre = @genres[index_genre]
     print 'Author: '
     author = gets.chomp
     puts 'Choose a label (Number): '
@@ -21,12 +22,11 @@ module CreateBook
     @books.push({
                   'publisher' => book.publisher,
                   'cover_state' => book.cover_state,
-                  'genre' => book.genre, # fix
+                  'genre' => book.genre['name'],
                   'author' => book.author,
                   'selected_label' => book.label,
                   'publish_date' => book.publish_date
                 })
-
     save_books
     puts 'Book succesfully created!'
   end
