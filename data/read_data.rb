@@ -25,4 +25,10 @@ module ReadData
     data_from_file = File.read(json_file)
     JSON.parse(data_from_file)
   end
+
+  def read_games
+    json_file = File.open('./data/games.json')
+    data_from_file = File.read(json_file)
+    JSON.parse(data_from_file)
+  end
 end
