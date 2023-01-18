@@ -70,18 +70,21 @@ In order to run this project you need:
 - LinkedIn: [diegogarcial](https://www.linkedin.com/in/diegogarcial/)
 
 
-👤 **Author2**
+👤 **Odette Gleen**
 
-- GitHub: [@x](https://github.com/x)
-- Twitter: [@x](https://twitter.com/x)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/x)
+- GitHub: [@Gleennkar](https://github.com/Gleennkar)
+- Twitter: [@gleeny24](https://twitter.com/twitterhandle)
+- LinkedIn: [@gleeny](https://www.linkedin.com/in/gleeny-nkar-aa3917182)
 
+<!-- FUTURE FEATURES -->
 
-👤 **Author3**
+## 🔭 Future Features <a name="future-features"></a>
 
-- GitHub: [@x](https://github.com/x)
-- Twitter: [@x](https://twitter.com/x)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/x)
+> These are some of the future features we want to add.
+
+- [ ] **[Delete a book]**
+- [ ] **[Delete a Music Album]**
+- [ ] **[Delete and add authors in the main menu]**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
