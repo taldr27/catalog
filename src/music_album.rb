@@ -9,6 +9,6 @@ class MusicAlbum < Item
   end
 
   def can_be_archived?
-    true if @archived || @cover_state == 'bad' # move_to_archive??
+    true if @archived || @cover_state == 'bad'
   end
 end

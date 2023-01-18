@@ -9,9 +9,6 @@ class Book < Item
   end
 
   def can_be_archived?
-    true if @archived || @cover_state == 'bad' # move_to_archive??
+    true if @archived || @cover_state == 'bad'
   end
 end
-
-# book1 = Book.new('1', 'bad', '1', '1', '1', '1990-11-11')
-# p book1

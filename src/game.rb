@@ -8,6 +8,6 @@ class Game < Item
   end
 
   def can_be_archived?
-    true if @archived && @last_played_at < 730
+    @archived && @last_played_at < 730
   end
 end

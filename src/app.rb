@@ -47,18 +47,21 @@ class App
       puts "#{index + 1} - #{option[1].name.to_s.split('_').join(' ').capitalize}"
     end
     puts '0 - Exit'
+    puts '-----------------------------------------------------------'
 
     option = gets.chomp.to_s
     if @menu_options.key?(option)
       puts ''
       @menu_options[option].call
       puts ''
+      puts '-----------------------------------------------------------'
       run
     elsif option == '0'
       puts "\nThank you for using this app!\n\n"
     else
       puts "\nThat is not a valid option\n\n"
       run
+      puts '-----------------------------------------------------------'
     end
   end
 end
