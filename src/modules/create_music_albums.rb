@@ -16,13 +16,13 @@ module CreateMusicAlbum
     on_spotify = gets.chomp
     music_album = MusicAlbum.new(on_spotify, genre, author, label, publish_date)
     @music_albums.push({
-      'on_spotify' => music_album.on_spotify,
-      'genre' => music_album.genre,
-      'author' => music_album.author,
-      'selected_label' => music_album.label,
-      'publish_date' => music_album.publish_date
-      })
-      save_music_albums
-      puts 'Music Album succesfully created!'
+                         'on_spotify' => music_album.on_spotify,
+                         'genre' => music_album.genre,
+                         'author' => music_album.author,
+                         'selected_label' => music_album.label,
+                         'publish_date' => music_album.publish_date
+                       })
+    save_music_albums
+    puts 'Music Album succesfully created!'
   end
 end
