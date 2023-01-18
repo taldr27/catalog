@@ -10,8 +10,10 @@ module CreateBook
     list_all_genres
     index_genre = gets.chomp.to_i
     genre = @genres[index_genre]
-    print 'Author: '
-    author = gets.chomp
+    puts 'Choose an author (Number): '
+    list_all_authors
+    index_author = gets.chomp.to_i
+    author = @authors[index_author]
     puts 'Choose a label (Number): '
     list_all_labels
     index_label = gets.chomp.to_i

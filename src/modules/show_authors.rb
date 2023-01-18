@@ -3,7 +3,7 @@ module ListAuthors
     if @authors.empty?
       puts 'There\'s no authors added yet!'
     elsif @authors.length >= 1
-      @authors.each { |i| puts %(ID: "#{i['id']}" First Name: #{i['first_name']} Last Name: #{i['last_name']}) }
+      @authors.each_with_index { |i, index| puts %(#{index}\) First Name: #{i['first_name']} || Last Name: #{i['last_name']}) }
     end
   end
 end

@@ -1,20 +1,16 @@
 [
   {
-    "publisher": "publisher1",
-    "cover_state": "good",
-    "genre": 741,
-    "author": 494,
-    "label": 730,
-    "publish_date": "2010-01-15",
-    "on_spotify":true
+    "on_spotify":true,
+    "genre": "Rock",
+    "author": "Author1",
+    "label": "New",
+    "publish_date": "2010-01-15"
   },
   {
-    "publisher": "publisher1",
-    "cover_state": "good",
-    "genre": 741,
-    "author": 494,
-    "label": 730,
-    "publish_date": "2010-01-15",
-    "on_spotify":true
+    "on_spotify":true,
+    "genre": "Blues",
+    "author": "Author2",
+    "label": "Old",
+    "publish_date": "2010-01-15"
   }
 ]

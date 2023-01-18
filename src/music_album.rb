@@ -3,7 +3,7 @@ require_relative './item'
 class MusicAlbum < Item
   attr_accessor :on_spotify
 
-  def initialize(_on_spotify, *args)
+  def initialize(on_spotify, *args)
     super(*args)
     @on_spotify = true
   end
@@ -12,3 +12,5 @@ class MusicAlbum < Item
     true if @archived || @cover_state == 'bad' # move_to_archive??
   end
 end
+music_album = MusicAlbum.new(true, 'genre', 'author', 'label', 'publish_date')
+p music_album
