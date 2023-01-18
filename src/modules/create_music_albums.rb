@@ -23,7 +23,7 @@ module CreateMusicAlbum
     @music_albums.push({
                          'publisher' => music_album.publisher,
                          'cover_state' => music_album.cover_state,
-                         'genre' => music_album.genre, # fix
+                         'genre' => music_album.genre,
                          'author' => music_album.author,
                          'selected_label' => music_album.label,
                          'publish_date' => music_album.publish_date,

@@ -53,12 +53,14 @@ class App
       puts ''
       @menu_options[option].call
       puts ''
+      puts '-----------------------------------------------------------'
       run
     elsif option == '0'
       puts "\nThank you for using this app!\n\n"
     else
       puts "\nThat is not a valid option\n\n"
       run
+      puts '-----------------------------------------------------------'
     end
   end
 end
